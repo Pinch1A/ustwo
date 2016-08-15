@@ -1,0 +1,14 @@
+html {
+  font-family: 'Open Sans', serif; }
+
+#main {
+  font-size: 15px; }
+  #main i {
+    font-size: 22px; }
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid #fff; }
+
+/*# sourceMappingURL=style.css.map */
