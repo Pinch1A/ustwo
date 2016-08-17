@@ -1,19 +1,98 @@
+/** MIXINS **/
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+  -moz-box-sizing: $box-model; // Firefox <= 19
+  box-sizing: $box-model;
+}
+/** MIXINS **/
+
+*,
+*:after,
+*:before {
+  @include box-sizing(border-box);
+}
+
 html {
 	font-family: 'Open Sans', serif;
 }
 body{
-	width: 100%
+	width: 100%;
 	height: 100%;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333;
+}
+fieldset{
+  border: 1px solid #fff;
+  color: #fff;
+}
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.box{
+  color: #000000;
+}
+.form-group {
+   width: 100%;
+   margin-bottom: 15px;
+  &.inline{
+    display: inline-flex;
+  }
+}
+textarea.form-control {
+  height: auto;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  color: #555;
+  background-color: #fff798;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 #main{
   font-size: 15px;
-    i{
+    &i{
 	font-size: 22px;
      }
 }
-
 .container{
-	width: 60%;
+	width: 50%;
 	margin: 0 auto;
-	border: 1px solid #fff;
+	clear:both;
+	overflow:hidden;
+}
+.checkbox, .radio {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  label{
+	font-weight: 300;
+	font-size: 12px;
+  }
+}
+
+
+.restart{
+  text-decoration: underline;
+  font-weight: normal;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 12px;
+  margin-left: 20%;
+  &:hover{
+    font-weight: 700;
+  }
 }
