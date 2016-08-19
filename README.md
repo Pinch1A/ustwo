@@ -39,3 +39,18 @@ Include a README file describing dependencies and instructions.
    3. Parsley Form Validation
 - go to /test
     1. bunch of test result runned with mocha.js and chai.js 
+    
+--------------------------------------------------------------------------
+
+##Feedbacks
+
+- To be honest I'm not an expert of mocha.js and form test,
+but I really like improve my self. It's quite hard understand real potencial of a tool/fmw
+if it's not used in a real project, anyway I've made this bunch of easy test to prove my attitude.
+
+--------------------------------------------------------------------------
+
+
+Thank you for your time.
+    
+    

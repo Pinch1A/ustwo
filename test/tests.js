@@ -105,17 +105,17 @@ describe( 'Bunch of TEST - Form', function() {
     });
     describe('Cacke tests - Success', function() {
 
-        it('Name is too short : Fail Validation', function() {
+        it('Name VALIDATED', function() {
             expect(successFields.name).to.have.length.above(5);
         });
-        it('Email missing \'@\' char : Fail Validation', function() {
+        it('Email VALIDATE', function() {
             expect(successFields.email).to.have.string('@');
         });
-        it('Cacke Type is Empty', function() {
+        it('Cacke Type FIND', function() {
             expect(successFields).to.include.keys('cackeType');
             expect(successFields.cackeType).to.deep.include.key('value');
         });
-        it('Cel Type is Empty', function() {
+        it('Cel Type FIND', function() {
             expect(successFields).to.include.keys('celType');
             expect(successFields.celType).to.deep.include.key('value');
         });
