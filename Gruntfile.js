@@ -57,19 +57,6 @@ module.exports = function (grunt) {
                     jQuery: true
                 }
             }
-        },
-        mocha: {
-            all: {
-                src: ['test/index.html']
-            },
-            options: {
-                run: true
-            }
-        },
-        simplemocha: {
-            all: {
-                src: ['test/**/*.js', '**/*.spec.js']
-            }
         }
     });
 
@@ -80,12 +67,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-bowercopy');
-    //grunt.loadNpmTasks('grunt-simple-mocha');
-    // Load grunt mocha task
-    grunt.loadNpmTasks('grunt-mocha');
 
-    grunt.registerTask('mocha', ['mocha']);
-    grunt.registerTask('default', ['bowercopy', 'uglify', 'watch', 'mocha']);
+    grunt.registerTask('default', ['bowercopy', 'uglify', 'watch']);
 
     grunt.registerTask('dev', ['bowercopy', 'copy', 'sass', 'jshint', 'uglify']);
 };
