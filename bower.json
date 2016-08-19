@@ -17,5 +17,8 @@
   ],
   "devDependencies": {
     "jquery": "^3.1.0"
+  },
+  "dependencies": {
+    "parsleyjs": "^2.4.4"
   }
 }

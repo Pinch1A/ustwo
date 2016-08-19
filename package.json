@@ -2,14 +2,20 @@
   "name": "script",
   "version": "0.0.1",
   "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-webdriver": "^1.2.0",
+    "es5-shim": "^4.5.9",
     "grunt": "^1.0.1",
     "grunt-bowercopy": "^1.2.4",
     "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
+    "grunt-mocha": "^1.0.2",
     "grunt-simple-mocha": "^0.4.1",
-    "mocha": "^3.0.2"
-  }
+    "mocha": "^3.0.2",
+    "selenium-webdriver": "^3.0.0-beta-2"
+    }
 }
