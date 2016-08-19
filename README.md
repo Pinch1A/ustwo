@@ -28,15 +28,14 @@ Include a README file describing dependencies and instructions.
 
 --------------------------------------------------------------------------
 
-##Instruction
-- Up and Running
- 1. clone git-repo
- 2. run npm install
- 3. run bower install
- 4. run grunt dev
- 5. open browser to index.html 
-    a. Responsive FORM
-    b. Mandatory fields
-    c. Parsley Form Validation
- 6. go to /test
-    a. bunch of test result runned with mocha.js and chai.js 
+##Up and Running
+- clone git-repo
+- run npm install
+- run bower install
+- run grunt dev
+- open browser to index.html 
+   1. Responsive FORM
+   2. Mandatory fields
+   3. Parsley Form Validation
+- go to /test
+    1. bunch of test result runned with mocha.js and chai.js 
